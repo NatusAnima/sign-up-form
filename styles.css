@@ -1,160 +1,236 @@
-body{
-    font-family: Lato;
-    overflow: hidden;
-    margin: 0;
+body {
+  font-family: Lato;
+  overflow: hidden;
+  margin: 0;
 }
 
-.img{
-    min-height: 100vh;
-    width: 100%;
-    min-width: 100vh;
-    display: flex;
+.img {
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100vh;
+  display: flex;
 }
 
-.background{
-    max-width: 40%;
+.background {
+  max-width: 40%;
 }
 
-.logo{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
-    top: 20%;
-    height: 20%;
-    background-color: rgb(75, 75, 75);
-    opacity: 0.5;
+.logo {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  top: 20%;
+  height: 20%;
+  background-color: rgb(75, 75, 75);
+  opacity: 0.5;
 }
 
-#cookie{
-    max-height: 80%;
-    margin-bottom: -70px;
+#cookie {
+  max-height: 80%;
+  margin-bottom: -70px;
 }
 
 @font-face {
-    font-family: PassionsConflict;
-    src: url(source/PassionsConflict-Regular.ttf);
+  font-family: PassionsConflict;
+  src: url(source/PassionsConflict-Regular.ttf);
 }
+
 @font-face {
-    font-family: Lato;
-    src: url(source/Lato-Regular.ttf);
+  font-family: Lato;
+  src: url(source/Lato-Regular.ttf);
 }
 
-.logo-text{
-    font-family: PassionsConflict;
-    font-size: 7vh;
-    margin-bottom: 5px;
+.logo-text {
+  font-family: PassionsConflict;
+  font-size: 7vh;
+  margin-bottom: 5px;
 }
 
-.container{
-    display: flex;
+.container {
+  display: flex;
 }
 
-.sign-up-container{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    height: 100vh;
-    width: 70%;
-    background-color: rgb(228, 228, 228);
-    
+.sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  height: 100vh;
+  width: 70%;
+  background-color: rgb(228, 228, 228);
+
 }
 
-.top-text{
-    margin: 10%;
-    overflow: auto;
-    font-weight: 600;
-    font-size: 3vh;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    margin-left: 5%;
-    word-spacing: 0.3em;
+.top-text {
+  margin: 10%;
+  overflow: auto;
+  font-weight: 600;
+  font-size: 3vh;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  word-spacing: 0.3em;
 }
 
 
 
-.top-text-container{
-    height: 27vh;
+.top-text-container {
+  height: 27vh;
 }
 
-.form-container{
-    height: 70vh;
-    background-color: rgb(243, 241, 241);
-    box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 5px 6px;;
+.form-container {
+  height: 50vh;
+  background-color: rgb(243, 241, 241);
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 5px 6px;
+  ;
 }
 
-#form-text{
-    margin-top: 2%;
-    margin-left: 5%;
-    font-size: 3vh;
-    font-weight: bold;
+#form-text {
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 3vh;
+  font-weight: bold;
 }
 
-.submit-container{
-    height: 60vh;
+.submit-container {
+  height: 60vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-fieldset{
-    margin: 2em;
-    border: 0px;
-    display: grid;
-}
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form{
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-evenly;
-  }
+fieldset {
+  margin: 2em;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 140px;
-    text-align: center;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 140px;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-left: 1%;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: Lato;
-  
-    /* Uniform text field size */
-    box-sizing: border-box;
-    margin-bottom: 20%;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-    margin-right: 2%;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-  }
+  font: Lato;
+
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  border: 1px solid #999;
+  margin-right: 2%;
+  margin-left: 1%;
+
+  border-radius: 8px;
+
+}
+
+input {
+  letter-spacing: 1px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+button {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+
+  margin: 7vh;
+  margin-bottom: 0vh;
+  height: 15%;
+  width: 35%;
+
+}
+
+button:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+button:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+button:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+.log-in{
+  margin: 7vh;
+  margin-top: 3vh;
+}
+
+a{
+  text-decoration: none;
+  color: #1e8449;
+}
